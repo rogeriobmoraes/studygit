@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Didática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            margin: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            padding: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Página Didática</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <section>
+        <h2>Aprenda HTML, CSS e JavaScript</h2>
+        <p>Esta página foi criada para demonstrar uma estrutura básica de HTML com estilos embutidos em CSS e interatividade com JavaScript.</p>
+        <button onclick="mostrarMensagem()">Clique para Interagir</button>
+        <p id="mensagem" style="color: #4CAF50; font-weight: bold;"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Página Didática. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").innerText = "Você clicou no botão! Esta é uma mensagem gerada com JavaScript.";
+        }
+    </script>
+</body>
+</html>
